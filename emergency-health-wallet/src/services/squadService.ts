@@ -8,7 +8,7 @@ const SQUAD_API_KEY = process.env.SQUAD_API_KEY;
 
 interface UserData {
   firstName: string;
-  lastName: string;
+  lastName: string; //test
   phoneNumber: string;
   bvn?: string;
 }
@@ -31,7 +31,7 @@ const generateSquadVirtualAccount = async (userData: UserData) => {
       {
         headers: {
           Authorization: `Bearer ${SQUAD_API_KEY}`,
-          "Content-Type": "application/json", 
+          "Content-Type": "application/json",
         },
       },
     );
