@@ -1,7 +1,7 @@
-import express, { Request, Response } from 'express';
-import dotenv from 'dotenv';
-import cors from 'cors';
-import walletRoutes from './routes/walletRoutes';
+import express, { Request, Response } from "express";
+import dotenv from "dotenv";
+import cors from "cors";
+import walletRoutes from "./routes/walletRoutes";
 
 // Load environment variables
 dotenv.config();
@@ -14,11 +14,11 @@ app.use(cors());
 app.use(express.json()); // Allows us to parse JSON bodies
 
 // API Routes
-app.use('/api/wallet', walletRoutes);
+app.use("/api/wallet", walletRoutes);
 
 // Health Check Route
-app.get('/', (req: Request, res: Response) => {
-  res.send('Emergency Health Wallet API is running!');
+app.get("/", (req: Request, res: Response) => {
+  res.send("Emergency Health Wallet API is running!");
 });
 
 // Start the server
