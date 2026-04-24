@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import { createVirtualAccount } from '../controllers/walletController';
+import { createVirtualAccount, evaluateUserScore } from '../controllers/walletController';
 
 const router = Router();
 
-// Route to initialize a new user wallet (virtual account)
 router.post('/create-account', createVirtualAccount);
+router.get('/evaluate-score/:userId', evaluateUserScore); // New route added
 
 export default router;
