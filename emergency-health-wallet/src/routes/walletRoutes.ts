@@ -1,9 +1,11 @@
 import { Router } from 'express';
-import { createVirtualAccount, evaluateUserScore } from '../controllers/walletController';
+import { createVirtualAccount, evaluateUserScore, simulateDeposit } from '../controllers/walletController';
 
 const router = Router();
 
 router.post('/create-account', createVirtualAccount);
-router.get('/evaluate-score/:userId', evaluateUserScore); // New route added
+router.get('/evaluate-score/:userId', evaluateUserScore);
+
+router.post('/simulate-deposit', simulateDeposit); 
 
 export default router;

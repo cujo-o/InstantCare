@@ -11,6 +11,9 @@ interface UserData {
   lastName: string;
   phoneNumber: string;
   bvn?: string; 
+  dob: string; 
+  address: string;
+  gender: string;
 }
 
 export const generateSquadVirtualAccount = async (userData: UserData) => {
@@ -22,6 +25,9 @@ export const generateSquadVirtualAccount = async (userData: UserData) => {
       last_name: userData.lastName,
       mobile_num: userData.phoneNumber,
       bvn: userData.bvn || "",
+      dob: userData.dob,
+      address: userData.address,
+      gender: userData.gender,
       beneficiary_account: "0123456789" // A designated central settlement account
     };
 
