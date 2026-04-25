@@ -23,5 +23,8 @@ app.get("/", (req: Request, res: Response) => {
 
 // Start the server
 app.listen(PORT, () => {
+  console.clear();
+
   console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Neural Network AI Engine initialized`);
 });
