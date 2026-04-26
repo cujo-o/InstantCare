@@ -27,3 +27,4 @@ The InstantCare backend is a robust Node.js and Express service that acts as the
    ```bash
    git clone [https://github.com/cujo-o/instantcare-backend.git](https://github.com/yourusername/instantcare-backend.git)
    cd emergency-health-wallet
+   npm run dev
