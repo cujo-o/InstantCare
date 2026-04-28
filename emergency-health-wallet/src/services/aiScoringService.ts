@@ -1,3 +1,4 @@
+
 interface Transaction {
   amount: number;
   transaction_type: string;
