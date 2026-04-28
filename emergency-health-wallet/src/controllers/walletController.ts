@@ -231,8 +231,6 @@ export const requestEmergencyFunds = async (
       .eq("user_id", userId);
 
     // Run Predictive ML Logic (This will tank the score due to the new debt)
-    // Replace the old AI calculation with the Neural Network
-    // (Assuming daysActive is 10 for the hackathon demo)
     const totalDeposits = transactions
       ? transactions.reduce(
           (sum, tx) =>
